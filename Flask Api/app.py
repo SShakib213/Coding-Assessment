@@ -3,7 +3,7 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.config['JWT_SECRET_KEY'] = 'super-secret-key'  # In production, use a strong key
+app.config['JWT_SECRET_KEY'] = 'super-secret-key' 
 
 jwt = JWTManager(app)
 
